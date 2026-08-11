@@ -2,7 +2,7 @@ const stats = [['07+', 'Years crafting'], ['42', 'Projects shipped'], ['09', 'De
 
 export function AboutSection() {
   return (
-    <section id="about" className="border-y border-white/10 bg-[#0b0e13] px-5 py-28 md:px-8 md:py-40">
+    <section id="about" className="border-y border-fuchsia-300/10 bg-[linear-gradient(145deg,#110819_0%,#0b0612_58%,#16091f_100%)] px-5 py-28 md:px-8 md:py-40">
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 flex items-center gap-4 font-mono text-xs uppercase tracking-[.22em] text-lime"><span>01</span><span className="h-px w-16 bg-lime/50" />About me</div>
         <div className="grid gap-16 lg:grid-cols-2">
