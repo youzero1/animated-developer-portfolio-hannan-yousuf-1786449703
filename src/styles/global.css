@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", sans-serif;
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --color-ink: #07090d;
+  --color-panel: #10141b;
+  --color-lime: #c7ff48;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #07090d; color: #f5f5f0; overflow-x: hidden; }
+::selection { background: #c7ff48; color: #07090d; }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #07090d; }
+::-webkit-scrollbar-thumb { background: #343b46; border-radius: 999px; }
+.grid-bg {
+  background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+.marquee { animation: marquee 24s linear infinite; }
+.float { animation: float 5s ease-in-out infinite; }
+.pulse-line { animation: pulse-line 2.2s ease-in-out infinite; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+@keyframes float { 50% { transform: translateY(-12px) rotate(2deg); } }
+@keyframes pulse-line { 50% { opacity: .35; transform: scaleX(.8); } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
