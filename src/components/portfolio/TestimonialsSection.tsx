@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const quotes = [
-  ['Alex brought rare care to every detail. The result was faster, clearer, and far more memorable than we imagined.', 'Maya Chen', 'Founder, Nocturne'],
+  ['Hannan brought rare care to every detail. The result was faster, clearer, and far more memorable than we imagined.', 'Maya Chen', 'Founder, Nocturne'],
   ['The perfect balance of an engineer’s rigor and a designer’s eye. Our team loved the process as much as the outcome.', 'Jon Bell', 'Creative Director, Kinetic'],
   ['A truly exceptional collaborator — thoughtful, fast, and always pushing the work toward something more distinctive.', 'Leila Ward', 'Product Lead, Archive 24'],
 ];

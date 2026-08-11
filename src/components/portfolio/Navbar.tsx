@@ -13,7 +13,7 @@ export function Navbar() {
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all ${scrolled ? 'border-b border-white/10 bg-ink/85 backdrop-blur-xl' : ''}`}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 md:px-8" aria-label="Main navigation">
-        <a href="#top" className="font-mono text-lg font-bold tracking-tighter text-white">ALEX<span className="text-lime">.</span>DEV</a>
+        <a href="#top" className="font-mono text-lg font-bold tracking-tighter text-white">HANNAN<span className="text-lime">.</span>DEV</a>
         <div className="hidden items-center gap-8 md:flex">
           {links.map((link, index) => <a key={link} href={`#${link}`} className="group font-mono text-xs uppercase tracking-[.18em] text-white/60 transition hover:text-white"><span className="mr-2 text-lime">0{index + 1}</span>{link}</a>)}
         </div>
