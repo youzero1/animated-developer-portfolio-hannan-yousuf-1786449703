@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { ThemeToggle } from './ThemeToggle';
 
 const links = ['about', 'work', 'experience', 'contact'];
 
@@ -17,7 +18,10 @@ export function Navbar() {
         <div className="hidden items-center gap-8 md:flex">
           {links.map((link, index) => <a key={link} href={`#${link}`} className="group font-mono text-xs uppercase tracking-[.18em] text-white/60 transition hover:text-white"><span className="mr-2 text-lime">0{index + 1}</span>{link}</a>)}
         </div>
-        <a href="#contact" className="hidden rounded-full border border-lime/50 px-5 py-2.5 font-mono text-xs uppercase tracking-wider text-lime transition hover:bg-lime hover:text-ink md:block">Let's talk ↗</a>
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+          <a href="#contact" className="hidden rounded-full border border-lime/50 px-5 py-2.5 font-mono text-xs uppercase tracking-wider text-lime transition hover:bg-lime hover:text-ink md:block">Let's talk ↗</a>
+        </div>
         <button type="button" onClick={() => setOpen(!open)} className="rounded-full border border-white/15 p-3 md:hidden" aria-label="Toggle menu" aria-expanded={open}><span className="block h-px w-5 bg-white" /><span className="mt-1.5 block h-px w-5 bg-white" /></button>
       </nav>
       {open && <div className="border-t border-white/10 bg-ink px-5 py-5 md:hidden">{links.map(link => <a onClick={() => setOpen(false)} key={link} href={`#${link}`} className="block border-b border-white/10 py-4 text-2xl capitalize">{link}</a>)}</div>}

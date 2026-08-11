@@ -6,6 +6,11 @@ import { SkillsSection } from '@/components/portfolio/SkillsSection';
 import { ProjectsSection } from '@/components/portfolio/ProjectsSection';
 import { ExperienceSection } from '@/components/portfolio/ExperienceSection';
 import { TestimonialsSection } from '@/components/portfolio/TestimonialsSection';
+import { BlogSection } from '@/components/portfolio/BlogSection';
+import { StatisticsSection } from '@/components/portfolio/StatisticsSection';
+import { CaseStudiesSection } from '@/components/portfolio/CaseStudiesSection';
+import { ResumeSection } from '@/components/portfolio/ResumeSection';
+import { NewsletterSection } from '@/components/portfolio/NewsletterSection';
 import { ContactSection } from '@/components/portfolio/ContactSection';
 import { Footer } from '@/components/portfolio/Footer';
 import { BackgroundScene } from '@/components/portfolio/BackgroundScene';
@@ -24,6 +29,11 @@ function HomePage() {
         <ProjectsSection />
         <ExperienceSection />
         <TestimonialsSection />
+        <BlogSection />
+        <StatisticsSection />
+        <CaseStudiesSection />
+        <ResumeSection />
+        <NewsletterSection />
         <ContactSection />
       </main>
       <Footer />
