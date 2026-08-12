@@ -22,6 +22,10 @@ body { margin: 0; background: #09050f; color: #fff7fd; overflow-x: hidden; }
 .marquee { animation: marquee 24s linear infinite; }
 .float { animation: float 5s ease-in-out infinite; }
 .pulse-line { animation: pulse-line 2.2s ease-in-out infinite; }
+.spin-slow { animation: spin-slow 8s linear infinite; }
+.shine { animation: shine 3.6s ease-in-out infinite; }
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+@keyframes shine { 0% { transform: translateX(-120%) skewX(-18deg); } 55%, 100% { transform: translateX(320%) skewX(-18deg); } }
 @keyframes marquee { to { transform: translateX(-50%); } }
 @keyframes float { 50% { transform: translateY(-12px) rotate(2deg); } }
 @keyframes pulse-line { 50% { opacity: .35; transform: scaleX(.8); } }
