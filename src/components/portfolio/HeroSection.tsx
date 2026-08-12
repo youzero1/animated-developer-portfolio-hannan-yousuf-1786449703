@@ -44,7 +44,7 @@ export function HeroSection() {
 
               <div className="mt-5 grid grid-cols-3 gap-2 text-center">
                 {[
-                  { v: '5+', l: 'Years' },
+                  { v: '6+', l: 'Years' },
                   { v: '40+', l: 'Projects' },
                   { v: '25+', l: 'Clients' },
                 ].map((s) => (
