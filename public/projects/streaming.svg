@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="500" height="300">
+  <defs>
+    <linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#120b2a"/>
+      <stop offset="60%" stop-color="#2b0f4a"/>
+      <stop offset="100%" stop-color="#080513"/>
+    </linearGradient>
+    <linearGradient id="accent6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="300" fill="url(#bg6)"/>
+  <circle cx="250" cy="140" r="130" fill="#c084fc" opacity="0.12"/>
+  <g transform="translate(120 60)">
+    <rect x="0" y="0" width="260" height="150" rx="18" fill="#ffffff" opacity="0.07"/>
+    <rect x="0" y="0" width="260" height="150" rx="18" fill="none" stroke="url(#accent6)" stroke-width="2" opacity="0.8"/>
+    <circle cx="130" cy="70" r="38" fill="url(#accent6)" opacity="0.9"/>
+    <path d="M119 52 l30 18 l-30 18 z" fill="#0b0615"/>
+    <rect x="30" y="124" width="200" height="6" rx="3" fill="#ffffff" opacity="0.2"/>
+    <rect x="30" y="124" width="120" height="6" rx="3" fill="#f472b6"/>
+    <circle cx="150" cy="127" r="7" fill="#ffffff"/>
+  </g>
+  <text x="250" y="262" font-family="ui-monospace, monospace" font-size="15" letter-spacing="4" fill="#ffffff" opacity="0.6" text-anchor="middle">STREAMING</text>
+</svg>

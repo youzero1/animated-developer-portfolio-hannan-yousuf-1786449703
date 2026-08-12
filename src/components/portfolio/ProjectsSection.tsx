@@ -70,6 +70,19 @@ export function ProjectsSection() {
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
+                  onError={(e) => {
+                    const img = e.currentTarget;
+                    img.style.display = 'none';
+                    const holder = img.parentElement;
+                    if (holder && !holder.querySelector('[data-fallback]')) {
+                      const span = document.createElement('span');
+                      span.dataset.fallback = 'true';
+                      span.className = 'font-mono text-sm tracking-widest text-white/70 uppercase';
+                      span.textContent = project.title;
+                      holder.appendChild(span);
+                    }
+                  }}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
               </div>

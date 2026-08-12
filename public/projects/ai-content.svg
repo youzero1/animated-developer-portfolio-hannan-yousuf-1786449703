@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="500" height="300">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#180b2b"/>
+      <stop offset="60%" stop-color="#331046"/>
+      <stop offset="100%" stop-color="#0b0616"/>
+    </linearGradient>
+    <linearGradient id="accent3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="300" fill="url(#bg3)"/>
+  <circle cx="250" cy="150" r="130" fill="#c084fc" opacity="0.12"/>
+  <g transform="translate(250 145)" stroke="url(#accent3)" stroke-width="2" fill="none" opacity="0.85">
+    <circle r="34"/>
+    <circle r="70" opacity="0.6"/>
+    <circle r="104" opacity="0.3"/>
+    <line x1="-104" y1="0" x2="104" y2="0" opacity="0.35"/>
+    <line x1="0" y1="-104" x2="0" y2="104" opacity="0.35"/>
+    <line x1="-74" y1="-74" x2="74" y2="74" opacity="0.25"/>
+    <line x1="74" y1="-74" x2="-74" y2="74" opacity="0.25"/>
+  </g>
+  <g fill="#f472b6">
+    <circle cx="250" cy="41" r="7"/>
+    <circle cx="354" cy="145" r="7"/>
+    <circle cx="250" cy="249" r="7"/>
+    <circle cx="146" cy="145" r="7"/>
+  </g>
+  <g fill="#c084fc" opacity="0.9">
+    <circle cx="320" cy="145" r="5"/>
+    <circle cx="180" cy="145" r="5"/>
+    <circle cx="250" cy="75" r="5"/>
+    <circle cx="250" cy="215" r="5"/>
+  </g>
+  <circle cx="250" cy="145" r="14" fill="#ffffff" opacity="0.9"/>
+  <text x="250" y="284" font-family="ui-monospace, monospace" font-size="15" letter-spacing="4" fill="#ffffff" opacity="0.6" text-anchor="middle">AI CONTENT</text>
+</svg>
